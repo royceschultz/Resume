@@ -1,7 +1,9 @@
+%
+% Imports
+%
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
-\geometry{left=1in, top=1in, right=1in, bottom=1in, footskip=.5cm, paperheight=11in, paperwidth=8.5in}
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{fontawesome}
@@ -9,130 +11,161 @@
 \usepackage{multicol}
 \usepackage{hyperref}
 \usepackage{hanging}
+
+%
+% Setup
+%
+\geometry{left=1in, top=.75in, right=1in, bottom=.75in, footskip=.5cm, paperheight=11in, paperwidth=8.5in}
 \hypersetup{
-    colorlinks=false,
-    urlbordercolor=1 1 1
+  colorlinks=false,
+  urlbordercolor=1 1 1
 }
 
 \setlength{\parindent}{0in}
 \hyphenpenalty=10000
 \pagestyle{empty}
 
+
+
+%
+% Styles
+%
+\newcommand{\horizontalBreaker}{\ \ \ }
+\newcommand{\sectionIndent}{13px}
+\newcommand{\sectionEnd}{26px} %used only for itemContent, centers textBox
+
+% Fonts
+\newcommand{\primaryFont}{\rmfamily}
+\newcommand{\accentFont}{\sffamily}
+
+% Colors
 \definecolor{black}{RGB}{0,0,0}
 \definecolor{primary}{RGB}{100,130,200}
 \definecolor{light}{RGB}{100,100,100}
 
-\newcommand{\horizontalBreaker}{\ \ \ }
-\newcommand{\sectionIndent}{15px}
-\newcommand{\sectionEnd}{30px} %used only for itemContent, centers textBox
-
 \newcommand{\sectionHeader}[1]{
-    \vspace{4px}
-    \sffamily \color{primary} \Large
-    #1
-    \color{black}
-    \rmfamily
-    \hrulefill
-    \vspace{3px}
+  \vspace{3px}
+  \accentFont \color{primary} \large
+  #1
+  \color{black}
+  \primaryFont
+  \hrulefill
+  \vspace{1px}
 }
 
 \newcommand{\itemHeader}[3]{
-    \vspace{6px}
-    \Large \textbf{#1}
-    \normalsize
-    \ifx&#3&
-        %do nothing
-    \else
-        \vspace{2px}
-        %\\
-        \sffamily \color{light}
-        #3
-        \rmfamily \color{black}
-    \fi
-    \color{primary}
-    \hfill \sffamily#2 \rmfamily
-    \color{black}
+  \vspace{8px}
+  \large \textbf{#1}
+  \ifx&#3&
+    %do nothing
+  \else
+    \color{primary} \accentFont \normalsize
+    \hfill #3
+    \color{black} \primaryFont
+  \fi
 
+  \ifx&#2&
+      %do nothing
+  \else
+    \vspace{2px}
+    \large
+    \textit{#2}
+  \fi
 }
 
 \newcommand{\itemContent}[1]{
-    \vspace{4px} \normalsize
-    \begin{addmargin}{\sectionIndent}
-        #1
-        \vspace{1px}
-    \end{addmargin}
+  \vspace{1px} \normalsize
+  \begin{addmargin}{\sectionIndent}
+    #1
+    \vspace{1px}
+  \end{addmargin}
 }
 
+%
+% Document
+%
 \begin{document}
 
-\begin{center}
-    {\Huge \sffamily Royce Churchill Schultz \rmfamily}\\
-        \vspace{6px}
-    %{ \Large \color{primary} \textbf{ }}\\
-    %    \vspace{5px}
-    {\normalsize
-        571-354-9559 \horizontalBreaker
-        royce.schultz@colorado.edu \horizontalBreaker
-        \href{https://www.github.com/royceschultz}{GitHub}, \href{https://linkedin.com/in/royceschultz}{LinkedIn}: royceschultz
-    }
-\end{center}
+  %
+  % Title
+  %
+  \begin{center}
+      {\Huge  \primaryFont Royce Churchill Schultz}\\
+          \vspace{6px}
+      {\normalsize
+          royce.schultz@colorado.edu \horizontalBreaker
+          \href{https://www.github.com/royceschultz}{GitHub}, \href{https://linkedin.com/in/royceschultz}{LinkedIn}: royceschultz
+      }
+  \end{center}
 
-\sectionHeader{Education}
-    \begin{addmargin}[\sectionIndent]{0px}
-        \itemHeader
-            {University of Colorado, Boulder}
-            {Graduating May 2021}
-            {College of Engineering}
-        \itemContent{Computer Science \& Applied Math, Double Major}
-        \itemContent{3.6 Major GPA, 3.5 Cumulative GPA}
-        \itemContent{Favorite Classes: Machine Learning, Natural Language Processing, Advanced Data Science,\\Computer Vision, Numerical Analysis, Applied Statistics}
-    \end{addmargin}
-\sectionHeader{Projects}
-    \begin{addmargin}[\sectionIndent]{0px}
-        \itemHeader
-            {\href{https://github.com/royceschultz/Cycling-Power-Calculator}{Cycling Power Calculator}}
-            {Data Science}
-            {Python, Jupyter Notebook}
-        \itemContent{Utilized recorded GPS data from my bike ride to calculate power output and calories burned.}
-        \itemContent{Conducted an experiment to test the coefficient of air and rolling resistance.}
+  %
+  % Education Section
+  %
+  \sectionHeader{Education}
+  \begin{addmargin}[\sectionIndent]{0px}
+    \itemHeader
+      {New York University}
+      {Tandon School of Engineering}
+      {Beginning August 2021}
+    \itemContent{Incoming student, M.S. Computer Science}
 
-        \itemHeader
-            {\href{https://github.com/royceschultz/Optical-Character-Recognition}{Optical Character Recognition}}
-            {Machine Learning}
-            {Python, TensorFlow, Keras}
-        \itemContent{Developed a Keras model to classify color images of characters by training on low cost data generated using imaging libraries and random fonts to simulate real world text.}
-        \itemContent{Utilized TensorBoard to compare the behavior and quality of different model structures.}
-        \itemContent{Achieved 90\% accuracy on a generated validation set and 46\% accuracy on hand labeled set of road signs, building names, and license plates after training exclusively on generated data.}
+    \itemHeader
+      {University of Colorado, Boulder}
+      {College of Engineering}
+      {Graduating May 2021}
+    \itemContent{B.S. Computer Science, Minor in Applied Mathematics}
+    \itemContent{3.7 Major GPA, 3.5 Cumulative GPA}
+    \itemContent{Favorite Classes: Big Data Architecture, Machine Learning, Natural Language Processing,\\Advanced Data Science, Computer Vision, Numerical Analysis, Robotics}
+  \end{addmargin}
 
-        \itemHeader
-            {\href{https://github.com/royceschultz/Purple-Nut-Project}{`Square Up' Event Planning Website}}
-            {Web Development}
-            {Python, Django, AWS}
-        \itemContent{Leading a team of 5 peers to create a web application using agile development methods.}
-        \itemContent{Conducting code reviews when pulling changes in feature branches to master.}
+  %
+  % Experience Section
+  %
+  \sectionHeader{Experience}
+  \begin{addmargin}[\sectionIndent]{0px}
+    \itemHeader{CU Leeds School of Business}{\href{https://github.com/TheBuffsOfWallStreet/NLP-FIN-LAB}{Machine Learning Researcher}}{September 2020 - Present}
+    \itemContent{Parsing text from more than 27,000 pages of scanned financial texts using AI vision models.}
+    \itemContent{Measuring market sentiment over a corpus of over 100,000 TV News episodes using NLP models.}
+    \itemContent{Building distributed data infrastructure to support collaboration for developers working remotely.}
+    \itemContent{Supporting many different runtime environments by defining infrastructure using containers.}
 
+    \itemHeader{Amazon}{Software Engineering Intern}{May 2020 - July 2020}
+    \itemContent{Used cloud services to build and deploy a web portal to address data needs and security concerns.}
+    \itemContent{Wrote efficient algorithms to detect erroneous metrics in a massive data warehouse.}
+    \itemContent{Supported continuous integration using automated deployment pipelines and unit tests.}
 
-    \end{addmargin}
+    \itemHeader{CU Math Academic Resource Center}{Math Tutor}{August 2019 - March 2020}
+    \itemContent{Encouraged students to use their critical thinking skills to solve math problems.}
+    \itemContent{Held regular office hours, aiding dozens of students each week.}
 
-\sectionHeader{Skills}
-    \begin{addmargin}[\sectionIndent]{0px}
-        \itemContent{\textbf{Languages:} Python, MatLab, C++, Scala, JavaScript, SQL}
-        \itemContent{\textbf{Markup:} \LaTeX , Markdown, HTML\&CSS}
-        \itemContent{\textbf{Version Control:} Git}
-        \itemContent{\textbf{Other Tools:} RegEx, AWS-EC2, Arduino}
-    \end{addmargin}
+    \itemHeader{CU Office of Information Technology}{Student Technician}{May 2018 - May 2019}
+    \itemContent{Created a web application to increase employee productivity by simplifying daily tasks.}
+    \itemContent{Installed and maintained technology systems in rooms across CU’s campus.}
 
-\sectionHeader{Experience}
-    \begin{addmargin}[\sectionIndent]{0px}
-        \itemHeader{Math Tutor}{August 2019 - Present}{CU Math Academic Resource Center}
-        \itemContent{Encouraging students to use their critical thinking skills to solve math problems.}
+  \end{addmargin}
 
-        \itemHeader{Student Technician}{May 2018 - May 2019}{CU Office of Information Technology}
-        \itemContent{Created a web application to increase employee productivity by automating daily tasks.}
-        \itemContent{Maintained technology in rooms across CU’s campus and responded to on-call issues.}
+  %
+  % Projects Section
+  %
+  \sectionHeader{Projects}
+  \begin{addmargin}[\sectionIndent]{0px}
+    \itemHeader
+      {\href{https://github.com/royceschultz/Smart-Garden}{Smart Garden}}
+      {}
+      {February 2021 - Present}
+    \itemContent{Deploying a raspberry pi to control watering cycles and collect metrics like temperature, humidity, and light intensity that are logged wirelessly to an InfluxDB host.}
+    \itemContent{Supporting completely remote management with IP cameras, Grafana metric dashboards, and remote control and automation via a web portal.}
+  \end{addmargin}
 
-        \itemHeader{Learning Assistant, Calculus}{January 2017 - May 2018}{CU Math Department}
-        \itemContent{Answered student's questions \& guided group discussion in intermediate Calculus classes.}
-        \itemContent{Held regular office hours, aiding dozens of students each week.}
-    \end{addmargin}
+  %
+  % Skills Section
+  %
+  \sectionHeader{Skills}
+  \begin{addmargin}[\sectionIndent]{0px}
+    \itemContent{\textbf{Languages:} Python, JavaScript, C, C++, Bash, SQL,  MatLab, Scala}
+    \itemContent{\textbf{AWS:} EC2, S3, Lambda, RDS, DynamoDB, CloudFormation CDK}
+    \itemContent{\textbf{Tools \& Frameworks:} Git, Docker, Docker-Compose, MongoDB, TensorFlow, Scikit-Learn}
+    \itemContent{\textbf{Development Methods:} Agile, Unit Testing, Microservices, Containerization, CI/CD}
+  \end{addmargin}
+
 \end{document}
