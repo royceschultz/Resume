@@ -1,12 +1,28 @@
 const settings = {
-  primaryColor: '#0a546a',
-  defaultIndent: 28,
-  margin: 0,
-  sizeXS: 10,
-  sizeS: 12,
-  sizeM: 16,
-  sizeL: 20,
-  sizeXL: 22,
+    sizeS: 12,
+    sizeM: 14,
+    sizeL: 18,
+    sizeXL: 26,
+
+    color: {
+        accent: '#3A4F41',
+        background: '#c9d3e1',
+    },
+    space: {
+        item: 5,
+        section: 7,
+    },
+
+    fontFamily: 'Times-Roman',
+    fontItalic: 'Times-Italic',
+    fontBold: 'Times-Bold',
+    fontBoldItalic: 'Times-Bold-Italic',
+
+    // fontFamily: 'Custom-Font',
+    // fontItalic: 'Custom-Font-Italic',
+    // fontBold: 'Custom-Font-Bold',
+    // fontBoldItalic: 'Custom-Font-Bold-Italic',
+
 }
 
-export default settings;
+export default settings

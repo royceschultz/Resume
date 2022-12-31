@@ -6,6 +6,7 @@
 
 # Links
 
-[My Website: royceschultz.com](https://royceschultz.com)
+[My projects on GitHub](https://github.com/royceschultz)
+<!-- [My Website: royceschultz.com](https://royceschultz.com) -->
 
 [LinkedIn](https://www.linkedin.com/in/royce-schultz/)

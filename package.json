@@ -1,18 +1,23 @@
 {
+  "main": "src/index.js",
   "dependencies": {
-    "@react-pdf/renderer": "^2.0.20",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "react": "^17.0.2"
+    "@react-pdf/renderer": "^2.2.0",
+    "react": "^16.14.0"
   },
   "scripts": {
-    "start": "babel index.js",
-    "build": "npx babel src --out-dir build",
-    "render": "node build/index.js",
-    "go": "yarn build && yarn render"
+    "build": "babel src --out-dir build",
+    "clean": "rm -r build",
+    "index": "node build/index.js",
+    "render": "./render.sh",
+    "dev": "npm run build && npm run index && open build/index.pdf"
   },
-  "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
   }
 }

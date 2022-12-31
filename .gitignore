@@ -1,7 +1,3 @@
-Schultz_*
-Royce_Schultz_*
-
-
 .DS_STORE
 node_modules
 scripts/flow/*/.flowconfig
