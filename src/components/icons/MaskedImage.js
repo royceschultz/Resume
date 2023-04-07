@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Svg, G, Path, Image, Rect } from '@react-pdf/renderer'
+import { View, Svg, G, Path, Image, Rect } from '@react-pdf/renderer'
 
 const CircleMask = ({ style, ...props }) => (
     <Svg

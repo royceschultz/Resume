@@ -2,12 +2,8 @@ import React from 'react'
 import { Page, Document, Font } from '@react-pdf/renderer'
 import ReactPDF from '@react-pdf/renderer'
 
-import Content from './Content.js'
-import settings from './Settings.js'
-
-import SetUpFonts from './fontConfig.js'
-
-SetUpFonts()
+import Content from './content/Content.js'
+import settings from './settings.js'
 
 // Disable Hyphenation
 Font.registerHyphenationCallback(word => [word]);

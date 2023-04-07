@@ -41,3 +41,14 @@ export const HSpace = ({debug, space, ...props}) => (
         {props.children}
     </View>
 )
+
+export const VPack = ({debug, space, children, ...props}) => (
+    <>
+        {children.map((child, i) => (
+            i == 0 ? [child] : [<VSpace debug={debug} space={space} />, child]
+        ).flat().map((element, i) => {
+            // Add a unique key to silence React warning.
+            return {...element, key: i}
+        }))}
+    </>
+)

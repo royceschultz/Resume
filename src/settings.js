@@ -17,12 +17,20 @@ const settings = {
     fontItalic: 'Times-Italic',
     fontBold: 'Times-Bold',
     fontBoldItalic: 'Times-Bold-Italic',
+}
 
-    // fontFamily: 'Custom-Font',
-    // fontItalic: 'Custom-Font-Italic',
-    // fontBold: 'Custom-Font-Bold',
-    // fontBoldItalic: 'Custom-Font-Bold-Italic',
-
+export const globalStyles = {
+    itemContent: {
+        'marginLeft': 4,
+    },
+    itemSubtitle: {
+        'fontFamily': settings.fontItalic,
+        'fontSize': settings.sizeS,
+    },
+    icon: {
+        height: 25, width: 25,
+        paddingRight: 5,
+    },
 }
 
 export default settings
