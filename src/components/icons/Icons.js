@@ -27,3 +27,7 @@ export const AmazonIcon = customImage('./assets/amazon.png', {
 export const TuSimpleIcon = customImage('./assets/tusimple.png', {
     backgroundColor: '#FFFFFF', scale: 0.93,
 })
+
+export const MaxarIcon = customImage('./assets/maxar.png', {
+    backgroundColor: '#4c4b47', scale: 0.6,
+})

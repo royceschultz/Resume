@@ -10,19 +10,16 @@ export const SkillsSection = () => {
     return (
         <View style={globalStyles.itemContent}>
             <NormalText>
-                <Accent>Specialization:</Accent> Git, Docker, Python, JavaScript, SQL, MongoDB, Bash, Linux, Arduino/ESP , Home&nbsp;Assistant
+                <Accent>Specialization:</Accent> Git, Docker, Python, JavaScript, Typescript, React, SQL, MongoDB, Bash, Linux, Arduino/ESP
             </NormalText>
             <NormalText>
-                <Accent>Proficiency:</Accent> C, C++, Typescript, ThreeJS&nbsp;(WebGL), ETL&nbsp;Pipelines, AWS, Fusion360&nbsp;(CAD), Kibana, Looker, Jira, Confluence, Code&nbsp;Reviews
+                <Accent>Proficiency:</Accent>  AWS, Jenkins, Rancher, Helm, Terraform, CI/CD, ThreeJS, Automated&nbsp;Testing, MapBoxGL, D3, Vue, Airflow, Fusion360&nbsp;(CAD), Jira, Confluence, Code&nbsp;Reviews
             </NormalText>
             <NormalText>
-                <Accent>Competency:</Accent> ROS, HPC, Tensorflow, PyTorch, Scala, Rancher, Kubernetes, RedShift&nbsp;(Data&nbsp;Warehousing)
+                <Accent>Competency:</Accent> ROS, HPC, C++, Kubernetes, Pytorch, Tensorflow, Scala, RedShift&nbsp;(Data&nbsp;Warehousing)
             </NormalText>
             <NormalText>
-                <Accent>Industry&nbsp;Knowledge:</Accent> Robotics, Autonomous&nbsp;Vehicles, Geospatial&nbsp;Data, Algorithms, Computational&nbsp;Geometry, CNC&nbsp;Manufacturing, Applied Statistics, Machine&nbsp;Learning, Object Detection, Teaching, Technical&nbsp;Communication
-            </NormalText>
-            <NormalText>
-                <Accent>Hobby:</Accent> FPV Drones, Endurance Cycling
+                <Accent>Industry&nbsp;Knowledge:</Accent> Geospatial&nbsp;Data, Digital&nbsp;Signal&nbsp;Processing, Algorithms, Autonomous&nbsp;Vehicles, Robotics, Computational&nbsp;Geometry, Teaching, Real-Time&nbsp;Programming, Testing, CNC&nbsp;Manufacturing, Applied Statistics, Machine&nbsp;Learning, Object Detection, Technical&nbsp;Writing&nbsp;and&nbsp;Communication
             </NormalText>
         </View>
     )

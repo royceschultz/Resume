@@ -47,8 +47,8 @@ const Column2 = () => (
         <ExperienceSection />
       </>
       <>
-        <H2 style={styles.sectionTitle} >Other Experience</H2>
-        <OtherExperienceSection />
+        {/* <H2 style={styles.sectionTitle} >Other Experience</H2>
+        <OtherExperienceSection /> */}
       </>
     </VPack>
   </View>

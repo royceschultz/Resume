@@ -18,8 +18,9 @@ export const TitleSection = () => (
             <Br />
             <NormalTextLink src="https://github.com/royceschultz">GitHub</NormalTextLink>, <NormalTextLink src="https://linkedin.com/in/royceschultz/">LinkedIn</NormalTextLink>: royceschultz
             <Br />
+            {/* Portfolio: <NormalTextLink src="https://royceschultz.com">royceschultz.com</NormalTextLink>
+            <Br /> */}
             Dual Citizen: USA & Iceland
         </NormalText>
     </Center>
 )
-    
