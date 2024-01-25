@@ -30,6 +30,7 @@ const NYU = () => Item({
     children: <>
         M.S. Computer&nbsp;Science, Cum Laude<Br />
         Awarded Merit-based Scholarship<Br />
+        Course Assistant, Calculus (2 Sem.)<Br />
         Graduated December 2022, 3.8&nbsp;GPA
     </>,
 })
@@ -40,6 +41,7 @@ const CU = () => Item({
     children: <>
         B.S. Computer Science<Br />
         Minor Applied Mathematics<Br />
+        Course Assistant, Calculus (4 Sem.)<Br />
         Graduated May 2021, 3.5 GPA
     </>,
 })

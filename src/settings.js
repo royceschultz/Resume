@@ -10,7 +10,7 @@ const settings = {
     },
     space: {
         item: 5,
-        section: 7,
+        section: 5,
     },
 
     fontFamily: 'Times-Roman',

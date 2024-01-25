@@ -10,19 +10,13 @@ export const SkillsSection = () => {
     return (
         <View style={globalStyles.itemContent}>
             <NormalText>
-                <Accent>Specialization:</Accent> Git, Docker, Python, JavaScript, SQL, MongoDB, Bash, Linux, Arduino/ESP , Home&nbsp;Assistant
+                <Accent>Specialization:</Accent> Git, Docker, AWS, Terraform, CI/CD, Python, JavaScript, Typescript, React, SQL, MongoDB, Rancher, Bash, Linux, Arduino/ESP
             </NormalText>
             <NormalText>
-                <Accent>Proficiency:</Accent> C, C++, Typescript, ThreeJS&nbsp;(WebGL), ETL&nbsp;Pipelines, AWS, Fusion360&nbsp;(CAD), Kibana, Looker, Jira, Confluence, Code&nbsp;Reviews
+                <Accent>Proficiency:</Accent> Helm, Jenkins, Kubernetes, Airflow, Pytorch, Tensorflow, C++, Rust, Vue, ThreeJS, MapBoxGL, D3, Automated&nbsp;Testing, Prometheus, Fusion360&nbsp;(CAD), ROS, HPC, Jira, Code&nbsp;Reviews, Data&nbsp;Warehousing
             </NormalText>
             <NormalText>
-                <Accent>Competency:</Accent> ROS, HPC, Tensorflow, PyTorch, Scala, Rancher, Kubernetes, RedShift&nbsp;(Data&nbsp;Warehousing)
-            </NormalText>
-            <NormalText>
-                <Accent>Industry&nbsp;Knowledge:</Accent> Robotics, Autonomous&nbsp;Vehicles, Geospatial&nbsp;Data, Algorithms, Computational&nbsp;Geometry, CNC&nbsp;Manufacturing, Applied Statistics, Machine&nbsp;Learning, Object Detection, Teaching, Technical&nbsp;Communication
-            </NormalText>
-            <NormalText>
-                <Accent>Hobby:</Accent> FPV Drones, Endurance Cycling
+                <Accent>Industry&nbsp;Knowledge:</Accent> Geospatial&nbsp;Data, Digital&nbsp;Signal&nbsp;Processing, Algorithms, Computational&nbsp;Geometry, Robotics, Autonomous&nbsp;Vehicles, AI Training, GPU&nbsp;Accelerated&nbsp;Computing, CUDA, Generative&nbsp;AI, Large&nbsp;Language&nbsp;Models, Stable&nbsp;Diffusion, Agile&nbsp;Development, Teaching, Real-Time&nbsp;Programming, CNC&nbsp;Manufacturing, Linear&nbsp;Algebra
             </NormalText>
         </View>
     )
