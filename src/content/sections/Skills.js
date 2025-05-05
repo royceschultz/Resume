@@ -9,14 +9,35 @@ export const SkillsSection = () => {
     const Accent = Italic
     return (
         <View style={globalStyles.itemContent}>
+            {/* To Add:
+                * Github Actions
+            */}
             <NormalText>
-                <Accent>Specialization:</Accent> Git, Docker, AWS, Terraform, CI/CD, Python, JavaScript, Typescript, React, SQL, MongoDB, Rancher, Bash, Linux, Arduino/ESP
+                <Accent>Developer&nbsp;Tools:</Accent> Git, Linux, Docker, VSCode, AWS, Terraform, Rancher, Kubernetes, Github&nbsp;Actions, Jenkins, Grafana&nbsp;(Service&nbsp;Monitoring)
             </NormalText>
+
             <NormalText>
-                <Accent>Proficiency:</Accent> Helm, Jenkins, Kubernetes, Airflow, Pytorch, Tensorflow, C++, Rust, Vue, ThreeJS, MapBoxGL, D3, Automated&nbsp;Testing, Prometheus, Fusion360&nbsp;(CAD), ROS, HPC, Jira, Code&nbsp;Reviews, Data&nbsp;Warehousing
+                <Accent>Languages:</Accent> Python, JavaScript, Typescript, C++, Rust, SQL, Bash, HTML, CSS
             </NormalText>
+
             <NormalText>
-                <Accent>Industry&nbsp;Knowledge:</Accent> Geospatial&nbsp;Data, Digital&nbsp;Signal&nbsp;Processing, Algorithms, Computational&nbsp;Geometry, Robotics, Autonomous&nbsp;Vehicles, AI Training, GPU&nbsp;Accelerated&nbsp;Computing, CUDA, Generative&nbsp;AI, Large&nbsp;Language&nbsp;Models, Stable&nbsp;Diffusion, Agile&nbsp;Development, Teaching, Real-Time&nbsp;Programming, CNC&nbsp;Manufacturing, Linear&nbsp;Algebra
+                <Accent>Web&nbsp;Technologies:</Accent> React, Vue, Svelte, Vite, Node, ThreeJS, WebGL, MapBoxGL, Lodash, Flask, Django, gRPC, WASM
+            </NormalText>
+
+            <NormalText>
+                <Accent>Data&nbsp;Science:</Accent> Pytorch, Tensorflow, Numpy, Pandas, Scikit-learn, OpenCV
+            </NormalText>
+
+            <NormalText>
+                <Accent>Testing&nbsp;Tools:</Accent> Pytest, Behave, Vitest, Jest
+            </NormalText>
+
+            <NormalText>
+                <Accent>Databases:</Accent> Postgres, MongoDB, Redis, Elasticsearch, InfluxDB, TimescaleDB
+            </NormalText>
+
+            <NormalText>
+                <Accent>Industry Knowledge:</Accent> Geospatial&nbsp;Data, Time&nbsp;Series&nbsp;Data, Scientific&nbsp;Calibration, Digital&nbsp;Signal&nbsp;Processing, AI Training, GPU&nbsp;Acceleration, Computer&nbsp;Vision, Robotics, Autonomous&nbsp;Vehicles, HPC, Algorithms,&nbsp;Computational&nbsp;Geometry, Distributed&nbsp;Systems, Parallel Computing
             </NormalText>
         </View>
     )

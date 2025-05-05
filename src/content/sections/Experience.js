@@ -29,13 +29,11 @@ const Maxar = () => Item({
     subtitle: 'Software Engineer',
     note: 'September 2023 - Present',
     description: [
-        'Developing mission critical software solutions for integration throughout the entire ground software stack.',
-        'Applying machine learning algorithms to satellite time-series metrics to expedite identification and resolution of anomalies.',
-        'Building scalable computer systems to ingest massive data streams from a growing constellation of next-gen satellites.',
-        'Deploying services and libraries with automated pipelines running comprehensive test suites to ensure reliable releases.',
-        'Enhancing software tools used to calibrate the imaging sensor that produces imagery for Google maps.',
-        // 'Creating intuitive interfaces to facilitate users interaction with time series data, enabling users to make informed decisions.',
-        // 'Proactively engaging with users to better understand their needs and deliver tailored solutions that exceed expectations.',
+        'Developing mission critical software solutions to support smooth operation of industry leading imaging satellites.',
+        'Creating interfaces, library tools, and real-time automated verification systems for time series telemetry data.',
+        'Developing calibration tools used to achieve 5 meter geolocation accuracy of satellite imagery taken from altitudes up to 770 km.',
+        'Engineered fault tolerant, highly available systems for critical mission operations within secure environments handling sensitive and classified information.',
+        'Collaborating with cross-functional teams to address complex engineering challenges.',
     ],
     icon: <MaxarIcon style={globalStyles.icon} />,
 })
@@ -59,7 +57,7 @@ const CUResearch = () => Item({
     note: 'September 2020 - May 2021',
     description: [
         'Researched natural language processing algorithms used to analyze TV news transcripts on the order of 10 gigabytes.',
-        'Applied computer vision techniques to extract textual data from 60,000 scanned financial documents.',
+        'Applied computer vision techniques to extract optical textual data from 60,000 scanned financial documents.',
         'Developed multi-processing algorithms to transform data in parallel on a supercomputer cluster provided by the University.'
     ],
     icon: <CUIcon style={globalStyles.icon} />,
