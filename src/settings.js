@@ -9,7 +9,7 @@ const settings = {
         background: '#c9d3e1',
     },
     space: {
-        item: 5,
+        item: 4,
         section: 5,
     },
 

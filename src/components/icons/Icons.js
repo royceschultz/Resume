@@ -20,6 +20,10 @@ export const NYUIcon = customImage('./assets/nyu.png', {
     backgroundColor: '#f6e4fd', scale: 0.8,
 })
 
+export const StanfordIcon = customImage('./assets/stanford.png', {
+    backgroundColor: '#f6e4fd', scale: 0.8,
+})
+
 export const AmazonIcon = customImage('./assets/amazon.png', {
     backgroundColor: '#121212', scale: 0.8,
 })

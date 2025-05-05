@@ -17,7 +17,7 @@ const styles = {
     color: settings.color.accent,
   },
   columnStyle: {
-    marginHorizontal: '0.37in',
+    marginHorizontal: '0.33in',
     display: 'flex', flexDirection: 'column', justifyContent: 'center',
   }
 }
@@ -58,7 +58,7 @@ const Content = () => (
   // Main container for whole page.
   <Row style={{ height: '100%', alignItems: 'flex-start' }}>
     <Col style={{
-      height: '100%', width: '41%',
+      height: '100%', width: '42%',
       backgroundColor: settings.color.background,
       justifyContent: 'center',
     }}>
@@ -66,7 +66,7 @@ const Content = () => (
     </Col>
 
     <Col style={{
-      height: '100%', width: '59%',
+      height: '100%', width: '58%',
       justifyContent: 'center',
     }}>
       <Column2 />
